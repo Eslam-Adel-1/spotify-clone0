@@ -173,14 +173,14 @@ export const PasswordTabContent = () => {
 export const AccountTabContent = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  const { user } = useContext(userContext);
+  const { user, setUser } = useContext(userContext);
   const [name, setName] = useState("");
 
   const handleLogout = async () => {
     try {
       const response = await handleUserLogout();
       toast.success(response);
-      navigate("/login");
+      setUser(null);
     } catch (err) {
       toast.error(err.message);
     }

@@ -20,6 +20,9 @@ logoutRouter.post("/", (req, res) => {
     }
     res.cookie("spotify_clone_user_token", "", {
       expires: new Date(0),
+      sameSite: "none",
+      secure: true,
+      httpOnly: true,
     });
 
     return res.status(200).json({
