@@ -72,23 +72,25 @@ import Roma_Cover from "../assets/songs/Roma/Roma.jpg";
 export const sidbarItems = [
   {
     name: "Home",
-    Icon: <IoHomeSharp className="w-5 h-5 flex-shrink-0" />,
+    Icon: <IoHomeSharp className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0" />,
   },
   {
     name: "Search",
-    Icon: <HiViewfinderCircle className="w-5 h-5 flex-shrink-0" />,
+    Icon: (
+      <HiViewfinderCircle className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0" />
+    ),
   },
   {
     name: "Your Library",
-    Icon: <MdLibraryMusic className="w-5 h-5 flex-shrink-0" />,
+    Icon: <MdLibraryMusic className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0" />,
   },
   {
     name: "Create Playlist",
-    Icon: <MdCreateNewFolder className="w-5 h-5 flex-shrink-0" />,
+    Icon: <MdCreateNewFolder className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0" />,
   },
   {
     name: "Liked Songs",
-    Icon: <FaRegHeart className="w-5 h-5 flex-shrink-0" />,
+    Icon: <FaRegHeart className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0" />,
   },
 ];
 
@@ -97,15 +99,15 @@ export const sidbarItems = [
 export const library = [
   {
     name: "Radio",
-    Icon: <FaRadio className="w-5 h-5" />,
+    Icon: <FaRadio className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0" />,
   },
   {
     name: "Podcast",
-    Icon: <FaPodcast className="w-5 h-5" />,
+    Icon: <FaPodcast className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0" />,
   },
   {
     name: "Local Files",
-    Icon: <FaLaptopFile className="w-5 h-5" />,
+    Icon: <FaLaptopFile className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0" />,
   },
 ];
 
@@ -114,55 +116,55 @@ export const library = [
 export const playlists = [
   {
     name: "Playlist 1",
-    Icon: <IoMdAlbums className="w-5 h-5" />,
+    Icon: <IoMdAlbums className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0 " />,
   },
   {
     name: "Playlist 2",
-    Icon: <IoMdAlbums className="w-5 h-5" />,
+    Icon: <IoMdAlbums className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0 " />,
   },
   {
     name: "Playlist 3",
-    Icon: <IoMdAlbums className="w-5 h-5" />,
+    Icon: <IoMdAlbums className="h-7 w-7 md:w-5 md:h-5 flex-shrink-0 " />,
   },
 ];
 
 //----------------------------
 
-export const users = [
-  {
-    name: "John Doo",
-    image: null,
-  },
-  {
-    name: "Sam Smith",
-    image: singer2,
-  },
-  {
-    name: "Sarah Smith",
-    image: singer3,
-  },
-];
+// export const users = [
+//   {
+//     name: "John Doo",
+//     image: null,
+//   },
+//   {
+//     name: "Sam Smith",
+//     image: singer2,
+//   },
+//   {
+//     name: "Sarah Smith",
+//     image: singer3,
+//   },
+// ];
 
-export const convo = [
-  {
-    name: "Eslam",
-    role: "user",
-    image: singer1,
-    message: "hello234",
-  },
-  {
-    name: "Amr",
-    role: "user2",
-    image: singer2,
-    message: "hi",
-  },
-  {
-    name: "Eslam",
-    role: "user",
-    image: singer1,
-    message: "hello",
-  },
-];
+// export const convo = [
+//   {
+//     name: "Eslam",
+//     role: "user",
+//     image: singer1,
+//     message: "hello234",
+//   },
+//   {
+//     name: "Amr",
+//     role: "user2",
+//     image: singer2,
+//     message: "hi",
+//   },
+//   {
+//     name: "Eslam",
+//     role: "user",
+//     image: singer1,
+//     message: "hello",
+//   },
+// ];
 //----------------------------
 
 export const singersArray = [

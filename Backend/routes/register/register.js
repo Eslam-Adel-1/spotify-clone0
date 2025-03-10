@@ -80,6 +80,8 @@ registerRouter.post("/", async (req, res) => {
     res.cookie("spotify_clone_user_token", userCookieId, {
       httpOnly: true,
       maxAge: 1000 * 60 * 60,
+      sameSite: "none",
+      secure: true,
     });
 
     return res.status(201).json({

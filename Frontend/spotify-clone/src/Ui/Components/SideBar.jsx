@@ -12,7 +12,7 @@ const SideBar = () => {
     [&::-webkit-scrollbar-thumb]:rounded-full
      "
     >
-      <ul className="flex flex-col box-border">
+      <ul className="flex flex-col box-border w-full">
         {sidbarItems.map(({ name, Icon }, index) => {
           return (
             <li

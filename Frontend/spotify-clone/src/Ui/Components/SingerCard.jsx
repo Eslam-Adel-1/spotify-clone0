@@ -45,23 +45,23 @@ const SingerCard = ({ image, name, title, songSrc }) => {
   //==============================
 
   return (
-    <div className="flex flex-col hover:bg-gradient-to-t from-white/5 via-white/5 to-transparent p-3 rounded-lg hover:cursor-pointer">
-      <div className="relative w-[175px] h-[175px] bg-white/5 rounded-full group/div">
+    <div className="flex flex-col w-full items-start hover:bg-gradient-to-t from-white/5 via-white/5 to-transparent p-3 rounded-lg hover:cursor-pointer">
+      <div className="relative w-full h-full bg-white/5 rounded-full group/div">
         <img
           src={image}
           alt={name}
-          className="w-full h-full rounded-full shadow-md shadow-black/30"
+          className="min-w-[200px] min-h-[200px] max-h-[250px] max-w-[250px] md:min-w-0 md:min-h-0 w-full h-full rounded-full shadow-lg md:shadow-md shadow-black/30"
           loading="lazy"
         />
-        <span className="absolute hidden shadow-black shadow-xl bottom-5 right-0 bg-green-500 rounded-full group-hover/div:flex hover:bg-green-400 group/span items-center justify-center w-11 h-11 cursor-pointer">
+        <span className="absolute hidden shadow-black shadow-xl bottom-5 right-0 bg-green-500 rounded-full group-hover/div:flex hover:bg-green-400 group/span items-center justify-center w-[30%] h-[30%] cursor-pointer">
           {playing ? (
             <FaPause
-              className="h-3 w-3 group-hover/span:h-4 group-hover/span:w-4  ease transition-all"
+              className="h-[30%] w-[30%] group-hover/span:h-4 group-hover/span:w-4  ease transition-all"
               onClick={handlePlay}
             />
           ) : (
             <FaPlay
-              className="h-3 w-3 group-hover/span:h-4 group-hover/span:w-4  ease transition-all"
+              className="h-[30%] w-[30%] group-hover/span:h-4 group-hover/span:w-4  ease transition-all"
               onClick={handlePlay}
             />
           )}

@@ -28,13 +28,13 @@ const AlbumCard = ({ image, name, artist, album }) => {
   //==============================
 
   return (
-    <div className="flex flex-col w-[200px] hover:bg-white/5 p-3 rounded-md hover:cursor-pointer">
-      <div className="relative w-[175px] h-[175px] bg-white/5 rounded-full group/div">
+    <div className="flex flex-col w-full hover:bg-white/5 p-3 rounded-md hover:cursor-pointer">
+      <div className="relative w-full h-full bg-white/5 rounded-lg group/div">
         <img
           src={image}
           alt={name}
           loading="lazy"
-          className="w-full h-full rounded-md shadow-sm shadow-black"
+          className="min-w-[200px] min-h-[200px] max-h-[250px] max-w-[250px] md:min-w-0 md:min-h-0 w-full h-full  rounded-md shadow-lg md:shadow-sm shadow-black"
           onClick={() => navigate(`/album/${name}`)}
         />
         <span className="absolute hidden shadow-black shadow-xl bottom-2 right-2 bg-green-500 rounded-full group-hover/div:flex hover:bg-green-400 group/span items-center justify-center w-12 h-12 cursor-pointer">

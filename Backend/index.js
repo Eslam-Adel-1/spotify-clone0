@@ -40,6 +40,8 @@ const io = new Server(httpServer, {
   },
 });
 
+app.set("trust proxy", 1);
+
 app.use(
   cors({
     origin: process.env.ALLOWED_WEBSITES_CORS,
@@ -48,7 +50,6 @@ app.use(
 );
 
 app.use(cookieParser());
-
 //===========================================================================
 
 app.use(express.json());

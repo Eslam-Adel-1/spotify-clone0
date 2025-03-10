@@ -1,7 +1,6 @@
 // Components imports
 import SingerCard from "../../../Ui/Components/SingerCard";
 import AlbumCard from "../../../Ui/Components/AlbumCard";
-import MobNav from "../../../Ui/Components/MobNav.jsx";
 
 import {
   singersArray,
@@ -17,6 +16,7 @@ const MainPage = () => {
       [&::-webkit-scrollbar]:w-1
     [&::-webkit-scrollbar-thumb]:bg-white
       [&::-webkit-scrollbar-thumb]:rounded-full
+      overflow-x-hidden
     "
     >
       <span
@@ -36,11 +36,7 @@ const MainPage = () => {
             Show All
           </p>
         </div>
-        <div
-          className="flex items-center
-        flex-wrap
-        gap-6 "
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3 ">
           {popular_songs.map((song, index) => {
             return (
               <SingerCard
@@ -64,11 +60,7 @@ const MainPage = () => {
             Show All
           </p>
         </div>
-        <div
-          className="flex items-center
-        flex-wrap
-        gap-6 "
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 ">
           {singersArray.map((singer, index) => {
             return (
               <SingerCard
@@ -93,11 +85,7 @@ const MainPage = () => {
             Show All
           </p>
         </div>
-        <div
-          className="flex items-center
-        flex-wrap
-        gap-6 "
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 ">
           {popular_albums.map((album, index) => {
             return (
               <AlbumCard
@@ -119,11 +107,7 @@ const MainPage = () => {
             Show All
           </p>
         </div>
-        <div
-          className="flex items-center
-        flex-wrap
-        gap-6 "
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 ">
           {Albums.map((singer, index) => {
             return (
               <AlbumCard name={singer.name} image={singer.image} key={index} />
