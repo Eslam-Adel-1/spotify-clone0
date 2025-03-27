@@ -128,15 +128,15 @@ const MusicPlayer = () => {
   // The Component
 
   return (
-    <section className=" bg-white/5 border-t-2 border-white/20 w-full h-20 px-4 flex items-center justify-center">
+    <section className=" bg-white/5 border-t-2 border-white/20 w-full min-h-20 h-[15%] px-4 flex items-center justify-center">
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-3">
           <img
             src={songDetails?.cover}
             alt={songDetails?.song_name}
-            className="w-12 h-12 rounded-sm shadow-sm shadow-white/40 hidden sm:block"
+            className="w-12 h-12 rounded-sm shadow-sm shadow-white/40 hidden sm:block xl:w-16 xl:h-16"
           />
-          <div className="flex-col font-[Spotify] text-white text-[13px] hidden sm:flex">
+          <div className="flex-col font-[Spotify] text-white text-[13px] hidden sm:flex xl:text-lg">
             <p>{songDetails?.song_name}</p>
             <p className="text-white/50">{songDetails?.artist}</p>
           </div>
@@ -146,28 +146,28 @@ const MusicPlayer = () => {
         <div className="flex flex-col items-center mx-auto w-[90%] sm:w-[70%] md:w-[50%] gap-2">
           <div className="flex items-center gap-4">
             <MdSkipPrevious
-              className="hover:text-white text-white/50 text-3xl cursor-pointer"
+              className="hover:text-white text-white/50 text-3xl cursor-pointer xl:text-4xl"
               onClick={handlePreviousSong}
             />
             {play ? (
               <FaPause
-                className="hover:text-white text-white/50 text-xl cursor-pointer"
+                className="hover:text-white text-white/50 text-xl cursor-pointer xl:text-3xl"
                 onClick={handlePlay}
               />
             ) : (
               <FaPlay
-                className="hover:text-white text-white/50 text-xl cursor-pointer"
+                className="hover:text-white text-white/50 text-xl cursor-pointer xl:text-3xl"
                 onClick={handlePlay}
               />
             )}
 
             <MdSkipNext
-              className="hover:text-white text-white/50 text-3xl cursor-pointer"
+              className="hover:text-white text-white/50 text-3xl cursor-pointer xl:text-4xl"
               onClick={handleNextSong}
             />
           </div>
-          <div className="flex items-center gap-2 w-[100%]">
-            <p className="text-white text-[12px] font-[Spotify] w-8">
+          <div className="flex items-center gap-2 w-[100%] max-w-[750px] xl:gap-4">
+            <p className="text-white text-[12px] font-[Spotify] w-8 xl:text-lg">
               {currentTime}
             </p>
 
@@ -180,27 +180,27 @@ const MusicPlayer = () => {
               classNameTrack="bg-green-500/40 flex-1"
             />
 
-            <p className="text-white text-[12px] font-[Spotify] w-8">
+            <p className="text-white text-[12px] font-[Spotify] w-8 xl:text-lg">
               {songDuration}
             </p>
           </div>
         </div>
         {/* //========================================== */}
-        <div className="items-center w-28 gap-2 hidden md:flex">
+        <div className="items-center w-28 gap-2 hidden md:flex xl:w-60 ">
           <IoRepeat
             className={`${
               repeat ? "text-[#1ED760]" : "text-white"
-            } text-4xl cursor-pointer`}
+            } text-4xl cursor-pointer xl:text-5xl`}
             onClick={handleRepeat}
           />
           {muted ? (
             <GoMute
-              className="text-white text-3xl cursor-pointer"
+              className="text-white text-3xl cursor-pointer  xl:text-5xl"
               onClick={() => setMuted(() => !muted)}
             />
           ) : (
             <GoUnmute
-              className="text-white text-3xl cursor-pointer"
+              className="text-white text-3xl cursor-pointer xl:text-5xl"
               onClick={() => setMuted(() => !muted)}
             />
           )}

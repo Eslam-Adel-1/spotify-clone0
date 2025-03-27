@@ -66,16 +66,26 @@ const LoginPage = () => {
   //-----------------------------------
 
   return (
-    <div className="w-full md:w-[60%] lg:w-[50%] ">
-      <div className="w-full md:p-10 md:bg-gradient-to-b md:from-white/5 md:to-[#b3b3b3]/5 md:shadow-md md:shadow-black-500 rounded-xl flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center w-[80%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%]">
+    <div className="w-full md:w-[60%] lg:w-[50%] xl:w-[40%] 2xl:w-[35%] max-w-[1000px]">
+      <div className="w-full md:p-10 md:bg-gradient-to-b md:from-white/5 md:to-[#b3b3b3]/5 md:shadow-md md:shadow-black-500 rounded-xl flex items-center justify-center min-h-[680px]">
+        <div className="flex flex-col items-center justify-center w-[80%] sm:w-[90%] md:w-[80%] lg:w-[75%] xl:w-[60%]">
           <div className="flex flex-col items-center justify-center gap-4 ">
             <img
-              className="w-[65px]"
+              className="w-[65px] "
               src={spotifyBWlogo}
               alt="spotify logo"
               loading="lazy"
             />
+            <div className="text-gray-400 font-mono ">
+              <p className="text-red-600 bg-white/40 p-2 rounded-md text-center">
+                Our BackEnd is down at the moment you can go to * /home * to
+                take a look at the app until we fix the problem unexpected
+                behavior and errors might occur
+              </p>
+              <p className="text-center">* Demo Account *</p>
+              <p>Email : eslam1231992@hotmail.com</p>
+              <p>Password : Wwww@123</p>
+            </div>
             <div className="flex flex-col items-center justify-center text-white w-fit">
               <h1 className="text-3xl md:text-4xl text-center font-bold font-[Spotify]">
                 Login to Spotify

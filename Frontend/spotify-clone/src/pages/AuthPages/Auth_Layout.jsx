@@ -51,7 +51,7 @@ const Auth_Layout = () => {
   return (
     <main className="relative min-h-screen py-24 box-border bg-gradient-to-b to-[#1db954] from-black/95 flex items-center justify-center">
       <img
-        className="h-9 absolute top-4 left-4"
+        className="h-10 absolute top-4 left-4 xl:h-12"
         src={spotifyLogo}
         alt="spotify logo"
       />

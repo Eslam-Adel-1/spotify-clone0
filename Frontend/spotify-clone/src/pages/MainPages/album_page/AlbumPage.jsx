@@ -57,11 +57,11 @@ const AlbumPage = () => {
             <img src={Spotify_Logo} alt="spotify logo" className="w-16 mt-2" />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-3">
+        <div className=" sm:hidden flex flex-col justify-center items-center gap-3">
           <img
             src={rotatePhone}
             alt="rotate phone gif"
-            className="w-[250px] sm:hidden"
+            className="w-[250px] "
           />
           <p className="text-white font-[Spotify] text-lg text-center">
             for a better experience, rotate your phone

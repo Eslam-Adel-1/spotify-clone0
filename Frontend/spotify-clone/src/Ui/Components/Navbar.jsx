@@ -20,7 +20,7 @@ const Navbar = () => {
         <img
           src={SpotifyLogo}
           alt="Spotify Logo"
-          className="h-7 mr-10 cursor-pointer"
+          className="h-7 mr-10 cursor-pointer "
           onClick={() => navigate("/home")}
         />
         <SearchBar />
@@ -33,7 +33,7 @@ const Navbar = () => {
           <span className="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full"></span>
           <IoMdNotifications className="text-white text-xl" />
         </div>
-        <ProfileComp />
+        {/* <ProfileComp /> */}
       </div>
     </nav>
   );

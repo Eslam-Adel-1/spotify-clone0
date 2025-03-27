@@ -8,7 +8,7 @@ import { Navigate, Outlet } from "react-router-dom";
 const ProtectedRoutes = () => {
   const { user } = useContext(userContext);
 
-  return <>{user ? <Outlet /> : <Navigate to="/login" />}</>;
+  return <>{true ? <Outlet /> : <Navigate to="/login" />}</>;
 };
 
 export default ProtectedRoutes;

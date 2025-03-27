@@ -8,7 +8,6 @@ const SideBar = () => {
       className="text-white w-full h-full overflow-y-scroll py-4 
     [&::-webkit-scrollbar]:w-[3px]
     [&::-webkit-scrollbar-track]:bg-transparent
-    
     [&::-webkit-scrollbar-thumb]:rounded-full
      "
     >
@@ -21,7 +20,7 @@ const SideBar = () => {
               onClick={() => navigate("/" + name)}
             >
               {Icon}
-              <p className="font-[Spotify] font-semibold text-[12px] tracking-[0.5px]">
+              <p className="font-[Spotify] font-semibold text-[12px] tracking-[0.5px] xl:text-lg">
                 {name}
               </p>
             </li>
@@ -39,7 +38,7 @@ const SideBar = () => {
               className="flex items-center gap-5 px-5 py-2 hover:bg-gradient-to-r from-white/25  to-transparent border-r-4 rounded-sm rounded-tr-none rounded-br-none cursor-pointer border-[#1db954] border-opacity-0 hover:border-opacity-100"
             >
               {Icon}
-              <p className="font-[Spotify] font-semibold text-[12px] tracking-[0.5px]">
+              <p className="font-[Spotify] font-semibold text-[12px] tracking-[0.5px]  xl:text-lg">
                 {name}
               </p>
             </li>
@@ -57,7 +56,7 @@ const SideBar = () => {
               className="flex items-center gap-5 px-5 py-2 hover:bg-gradient-to-r from-white/25  to-transparent border-r-4 rounded-sm rounded-tr-none rounded-br-none cursor-pointer border-[#1db954] border-opacity-0 hover:border-opacity-100"
             >
               {Icon}
-              <p className="font-[Spotify] font-semibold text-[12px] tracking-[0.5px]">
+              <p className="font-[Spotify] font-semibold text-[12px] tracking-[0.5px]  xl:text-lg">
                 {name}
               </p>
             </li>

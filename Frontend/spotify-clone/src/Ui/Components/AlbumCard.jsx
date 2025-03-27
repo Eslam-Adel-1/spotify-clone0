@@ -37,15 +37,15 @@ const AlbumCard = ({ image, name, artist, album }) => {
           className="min-w-[200px] min-h-[200px] max-h-[250px] max-w-[250px] md:min-w-0 md:min-h-0 w-full h-full  rounded-md shadow-lg md:shadow-sm shadow-black"
           onClick={() => navigate(`/album/${name}`)}
         />
-        <span className="absolute hidden shadow-black shadow-xl bottom-2 right-2 bg-green-500 rounded-full group-hover/div:flex hover:bg-green-400 group/span items-center justify-center w-12 h-12 cursor-pointer">
+        <span className="absolute hidden shadow-black shadow-xl bottom-5 right-0 bg-green-500 rounded-full group-hover/div:flex hover:bg-green-400 group/span items-center justify-center w-[30%] h-[30%] cursor-pointer">
           {play ? (
             <FaPause
-              className="h-3 w-3 group-hover/span:h-4 group-hover/span:w-4 ease transition-all"
+              className="h-[30%] w-[30%] group-hover/span:h-4 group-hover/span:w-4  ease transition-all"
               onClick={handlePlayAlbum}
             />
           ) : (
             <FaPlay
-              className="h-3 w-3 group-hover/span:h-4 group-hover/span:w-4 ease transition-all"
+              className="h-[30%] w-[30%] group-hover/span:h-4 group-hover/span:w-4  ease transition-all"
               onClick={handlePlayAlbum}
             />
           )}
